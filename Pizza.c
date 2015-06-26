@@ -18,34 +18,19 @@
 	campo preco será aplicando um desconto de 7,5% sobre o preço original da pizza. 
 */
 
-
 #include<stdio.h>
 #include<conio.h>
 
-#define TAM_NOME 15
-
-main(){
-	
+int main(){
 	struct dados_pizza {
 	int codigo;
-	char nome[TAM_NOME];
+	char nome[15];
 	float raio, diametro, peso, preco;
+
 };
 	struct dados_pizza Pizza[3];
-/*	printf("Informe o codigo da pizza:");
-	scanf("%d",&Pizza[i].codigo);
-	printf("Informe o nome da pizza:");
-	scanf("%c",&Pizza[i].nome);
-	printf("Informe o raio da pizza:");
-	scanf("%f",%Pizza[i].raio);
-	diametro=raio/2;
-	prinf("Informe o peso da pizza");
-	scanf("%f",&Pizza[i].peso);
-	printf("Informe o preco da pizza:");
-	scanf("%f",&Pizza[i].preco);
-*/	
 	int i;
-	for (i=0; i<35; i++)
+	for (i=0; i<3; i++)
 	{
 		printf("Informe o código da pizza: ");
 		scanf("%d",&Pizza[i].codigo);
@@ -60,4 +45,14 @@ main(){
 		Pizza[i].diametro = Pizza[i].raio * 2 ;
 		printf("\n");
 }
+for (i=0; i<3; i++)
+{
+printf("Codigo da pizza: %d", Pizza[i].codigo);
+printf("Diâmetro da pizza: %f", Pizza[i].diametro);
+printf("Preço da pizza: %f", Pizza[i].preco);
+printf("\n");
 }
+getch ();
+return 0;
+}
+
