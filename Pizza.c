@@ -42,11 +42,12 @@ int main(){
 		scanf("%f",&Pizza[i].peso);
 		printf("Informe o preço da pizza: ");
 		scanf("%f",&Pizza[i].preco);
-		Pizza[i].diametro = Pizza[i].raio * 2 ;
+		Pizza[i].diametro = Pizza[i].raio * 2.0 ;
 		printf("\n");
 }
 for (i=0; i<3; i++)
 {
+Pizza[i].preco = Pizza[i].preco – (Pizza[i].preco * 0.075);
 printf("Codigo da pizza: %d", Pizza[i].codigo);
 printf("Diâmetro da pizza: %f", Pizza[i].diametro);
 printf("Preço da pizza: %f", Pizza[i].preco);
