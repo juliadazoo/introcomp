@@ -4,9 +4,20 @@
 	Conteúdo: Estrutura Registro
 	Date: 25/06/15 18:24
 	Description: Estudos para avaliação semestral
+	
+#   Declarar uma estrutura registro denominada dados_pizza com os seguintes campos: codigo (tipo inteiro),
+	nome (uma palavra com o máximo de 15 caracteres), raio, diametro (corresponde ao diâmetro da pizza),
+	peso e preco (corresponde ao preço da pizza).
+
+# 	Declarar um vetor denominado Pizza do tipo dados_pizza para armazenar os dados de 35 pizzas.
+
+# 	Preencher o vetor Pizza declarado na questão anterior. O campo diametro deverá ser calculado a partir
+	do campo raio.
+
+# 	Exibir os campos codigo, diametro e preco atualizado de cada pizza. Considere que, a atualização do
+	campo preco será aplicando um desconto de 7,5% sobre o preço original da pizza. 
 */
 
-//Pizzaria DindaMassas
 
 #include<stdio.h>
 #include<conio.h>
